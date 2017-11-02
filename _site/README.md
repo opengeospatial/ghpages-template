@@ -1,2 +1,2 @@
 # OGC ghpages-SWG-template
-The ogc swg template jekyll
+This is the gh-pages jekyll template for all of the SWG that have an associated website.
