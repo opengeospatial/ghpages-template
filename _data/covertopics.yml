@@ -1,5 +1,4 @@
-- &catInTheHat
-  name: Sample data
+- name: Sample data
   icon: fa-floppy-o
   link: http://www.opengeospatial.org
 
