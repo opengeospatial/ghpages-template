@@ -2,10 +2,10 @@
   <div class="jumbotron">
     <div class="row">
       <div class="col-md-4 col-md-offset-2">
-        <img src="{{ "logo/standard_logo_placeholder.png" | prepend: site.baseurl }}" class="img-responsive center-block" alt="CityGML">
+        <img src="{{ "logo/standard_logo_placeholder.png" }}" class="img-responsive center-block" alt="CityGML">
       </div>
       <div class="col-md-4">
-        <a href="http://www.opengeospatial.org"> <img src="{{ "img/OGC_Logo_2D_Blue_x_0_0.png" | prepend: site.baseurl }}" class="img-responsive center-block" alt="OGC"></a>
+        <a href="http://www.opengeospatial.org"> <img src="{{ "img/OGC_Logo_2D_Blue_x_0_0.png" }}" class="img-responsive center-block" alt="OGC"></a>
       </div>
     </div>
     <!-- <h3 class="text-center">help, documentation, tips, example datasets, tutorials</h3> -->
@@ -27,14 +27,16 @@
             </div>
             <div class="panel-body">
               <div class="firstpost">
-                  <a href="{{ site.data.news[0].url | prepend: site.baseurl }}">{{ site.data.news[0].title }}</a>
+                  <!--<a href="{{ site.data.news[0].url | prepend: site.baseurl }}">{{ site.data.news[0].title }}</a>-->
+                  <a href="{{ site.data.news[0].url }}">{{ site.data.news[0].title }}</a>
                   <br><span>{{ site.data.news[0].date | date_to_string }}</span>
                   <br />{{ site.data.news[0].excerpt | strip_html }}
                   <hr />
               </div>
               <ul class="posts">
                 {% for post in site.data.news offset:1 limit:5 %}
-                  <li><span>{{ post.date | date_to_string }}</span> <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+                  <!--<li><span>{{ post.date | date_to_string }}</span> <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>-->
+                  <li><span>{{ post.date | date_to_string }}</span> <a class="post-link" href="{{ post.url }}">{{ post.title }}</a></li>
                 {% endfor %}
               </ul>
             </div>

@@ -13,7 +13,7 @@ The most obvious change being the title:StandardName. You will want to change th
 
 The `_data` directory contains the files that need to edited for each section of the site:
 
-`about.yml`  
+`about.yml`
   This is the section below the header section.
    
 `covertopic.yml`
